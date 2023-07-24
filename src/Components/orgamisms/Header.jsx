@@ -1,8 +1,30 @@
+import Button from "../atoms/Button"
 import Logo from "../atoms/Logo"
 import Links from "../molecules/Links"
 
 export default function Header(){
-return(
+  const pathname = window.location.href
+
+  const linksHeader01 = [
+    {
+        Text:'Our rates',
+        url:`${pathname}/#rates ` 
+    },
+    {
+        Text:'Favorite projects',
+        url:`${pathname}/#projects ` 
+    },
+    {
+        Text:'Reviews',
+        url:`${pathname}/#reviews ` 
+    },
+    {
+        Text:'Contact',
+        url:`${pathname}/#contact ` 
+    },
+ ]
+
+  return(
 
     <header className=" 
     px-12 
@@ -16,8 +38,7 @@ return(
     
     >
       <Logo />
-      <Links />
-
+      <Links links={linksHeader01}  />
     </header>
 )
 
