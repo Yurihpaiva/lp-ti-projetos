@@ -9,6 +9,7 @@ ${props.color === 'blue' && 'bg-blue-700 border-blue-700 text-white'}
 ${props.color === 'green' && 'bg-green-700 border-green-800 text-black'}
 uppercase
 text-base
+max-w-fit
 `}
 >
 {props.title}
